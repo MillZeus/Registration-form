@@ -38,7 +38,7 @@ app.post("/register", async (req,res)=>{
 
         const existingUser =await Registration.findOne({email:email});
         //check for existing user
-        if(!exisitingUser){
+        if(!existingUser){
             const registrationData=new Registration({
                 name,
                 email,
