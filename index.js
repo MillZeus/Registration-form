@@ -14,7 +14,7 @@ mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.pbnpce2.mongodb
     
 });
 
-//registration Schema
+//Registration Schema
 const registrationSchema=new mongoose.Schema({
     name:String,
     email:String,
